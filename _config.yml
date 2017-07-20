@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: 上海大学开源社区
+subtitle: SHUOSC
+description: 上海大学开源社区是由在线的开源爱好者发起并组成的全校性群众团体，是一个以推进自由开放源代码、分享学习开源技术为目的的社区组织。
+author: zhonger
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://osc.shu.edu.cn
 root: /
-permalink: :year/:month/:day/:title/
+permalink: p/:title.html
 permalink_defaults:
 
 # Directory
@@ -72,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: shuosc
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

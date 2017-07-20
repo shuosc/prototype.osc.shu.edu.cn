@@ -1,0 +1,524 @@
+/*
+*   SHUOSC style.css
+*   Author: zhonger <wuwozhonger[at]gmail.com>
+*/
+
+html,
+body,
+address,
+blockquote,
+div,
+dl,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+pre,
+table,
+ul,
+dd,
+dt,
+li,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+button,
+del,
+ins,
+map,
+object,
+a,
+abbr,
+acronym,
+b,
+bdo,
+big,
+br,
+cite,
+code,
+dfn,
+em,
+i,
+img,
+kbd,
+q,
+samp,
+small,
+span,
+strong,
+sub,
+sup,
+tt,
+var,
+legend,
+fieldset,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", "Hiragino Sans GB",, Arial, sans-serif;
+}
+
+h3 {
+    /*font-family: 微软雅黑;*/
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 1em 0;
+    font-size: 1.9em;
+    line-height: 1.4em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.section {
+    text-align: center;
+}
+
+.icon-container {
+    width: 270px;
+    padding: 18px 0;
+    float: left;
+    position: relative;
+    text-align: left;
+}
+
+.icon-container [class^="czs-"],
+.icon-container [class*=" czs-"] {
+    font-size: 16px;
+    color: #171717;
+    position: absolute;
+    margin-top: 5px;
+    border: none;
+    padding: 0;
+    /*-webkit-transition: font-size .2s, margin-top .2s;*/
+    /*-moz-transition: font-size .2s, margin-top .2s;*/
+    /*transition: font-size .2s, margin-top .2s;*/
+}
+
+[class^="czs-"],
+[class*=" czs-"] {
+    font-family: 'strawberrry';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-name {
+    color: #666;
+    margin-left: 35px;
+    font-size: .8em;
+    transition: .3s;
+}
+
+
+/* Header */
+
+.header {
+    background: #337C6B;
+    font-size: 12px;
+    color: #337C6B;
+    align-content: center;
+    background-image: url("/images/background.svg");
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_h1 {
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: .75em;
+    margin-bottom: .75em;
+    display: block;
+    font-size: 1.5em;
+    /*font-family: sans-serif;*/
+    line-height: 1.5;
+    color: #ffffff;
+    align-content: center;
+}
+
+.header_small {
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: .66666667em;
+    color: #fff;
+    font-weight: normal;
+    /*font-family: sans-serif;*/
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.header_small:hover {
+    color: #171717;
+}
+
+.masthead {
+    width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbar {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+}
+
+.navbar .logo {
+    float: left;
+    background-image: url(/images/logo_180.png);
+    width: 300px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position-y: center;
+    margin: 5px 5px;
+    padding-left:20px;
+    font-size: 26px;
+}
+
+.navbar .nav {
+    float: right;
+    color: #fff;
+}
+
+.navbar .nav li {
+    float: left;
+    font-size: 16px;
+    padding: 0 15px;
+    display: block;
+}
+
+.navbar .nav a {
+    color: #fff;
+}
+
+.navbar .nav a:hover {
+    color: #337C6B;
+}
+
+.navbar .nav .github {
+    font-size: 16px;
+    line-height: 84px;
+}
+
+.navbar .nav .navigation {
+    color: #fff;
+}
+
+.title_name {
+    color: #666;
+    font-size: .8em;
+    transition: .3s;
+}
+
+.icon-section {
+    clear: both;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.intro {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 300;
+    margin: 90px 0 70px 0;
+}
+
+button.download {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 50px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    transition: .5s;
+    outline: none;
+}
+
+button.download:hover {
+    background-color: #fff;
+    color: #000;
+    transition: .5s;
+}
+
+.donation {
+    color: #fff;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.donation .icon {
+    color: #fff;
+    font-size: 16px;
+}
+
+.popover {
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    margin-left: -90px;
+    display: none;
+}
+
+.popover img {
+    width: 156px;
+    height: 156px;
+    margin: 12px;
+}
+
+.donation a:hover .popover {
+    display: inline;    
+}
+
+.pagewidth {
+    width: 1080px;
+    max-width: 100%;
+    margin: 0 auto;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.section .pagewidth {
+    padding: 2% 0 5%;
+}
+
+.icon-container:hover [class^="czs-"],
+.icon-container:hover [class*=" czs-"] {
+    font-size: 32px;
+    margin-top: -3px;
+    margin-left: 1px;
+    -webkit-animation: bounceIn .5s;
+    -moz-animation: bounceIn .5s;
+    animation: bounceIn .5s;
+}
+
+.icon-container:hover .icon-name {
+    color: #171717;
+}
+
+.icon-container:hover .icon-name {
+    margin-left: 45px;
+}
+
+.icon-container.icon-lg {
+    padding: 26px 0;
+}
+
+.icon-container.icon-lg > span:first-child {
+    font-size: 32px;
+    margin-top: -3px;
+}
+
+.icon-container.icon-lg:hover [class^="czs-"],
+.icon-container.icon-lg:hover [class*=" czs-"] {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 0px;
+    -webkit-animation: bounceIn .5s;
+    -moz-animation: bounceIn .5s;
+    animation: bounceIn .5s;
+}
+
+.icon-container.icon-lg .icon-name {
+    margin-left: 45px;
+}
+
+.icon-container.icon-lg:hover .icon-name {
+    margin-left: 35px;
+}
+
+/* Content*/
+.content {
+    background: #fff;
+    font-size: 12px;
+    color: #000;
+    align-content: center;
+    line-height: 60px;
+}
+
+/* Footer */
+
+.footer {
+    background: #f5f6f5;
+    font-size: 12px;
+    color: #000;
+}
+
+.footer .wrap {
+    height: 120px;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.footer .wrap .left {
+    float: left;
+    display: block;
+    font-weight: normal;
+    font-size: 28px;
+    margin: 10px 10px;
+    background-image: url(/images/logo_72.png);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    padding-left: 65px;
+    height: 100px;
+    color: #397C6B;
+    width:250px;
+    text-align: center;
+}
+
+
+.footer .wrap .left .title {
+    margin-top: 20px;    
+}
+
+.footer .wrap .left .subtitle {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer .wrap .middle {
+    float: left;
+    display: block;
+    font-size: 14px;
+    margin: 20px auto;
+    margin-left: 40px;
+    width: 150px;
+    color: #397C6B;
+    align-content: center;
+}
+.footer .wrap .links {
+    width: 350px;
+    height: 80px;
+}
+.footer .wrap .middle div {
+    line-height: 26px;
+    min-width:80px;
+    display: inline-block;
+}
+
+.footer .wrap .right {
+    float: right;
+}
+
+.footer .wrap .right .wx{
+    width:100px;
+    margin: 10px 30px;
+}
+
+.footer .wrap a {
+    color: #397C6B;
+}
+
+.footer .wrap a:hover {
+    color: #7b7b7b;
+}
+/* 响应式 */
+
+@media all and (max-width: 1080px) {
+    .header .masthead {
+        width: calc(100% - 60px);
+        padding: 0 30px;
+    }
+    .footer .wrap {
+        width: calc(100% - 60px);
+        padding: 0 30px;
+    }
+    .pagewidth {
+        padding: 0 30px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .header .masthead {
+        width: 100%;
+        padding: 0;
+    }
+    .navbar {
+        background-color: #171717;
+        height: 60px;
+        border-bottom: 1px solid #1f1f1f;
+    }
+    .navbar .nav {
+        display: none;
+    }
+    .navbar .logo {
+        background-image: url(../img/logo_mobile.svg);
+        width: 40px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: 40px 60px;
+        float: none;
+        margin: 0 auto;
+    }
+    .intro {
+        margin: 28px 16px 40px 16px;
+    }
+    .donation {
+        display: none;
+    }
+    button.download {
+        margin-bottom: 40px;
+    }
+    .footer {
+        line-height: 40px;
+    }
+    .footer .wrap {
+        height: 88px;
+        padding: 4px 0;
+        text-align: center;
+    }
+    .footer .wrap .left,
+    .footer .wrap .right {
+        float: none;
+    }
+    .footer .wrap .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .wrap .design-by{
+        margin: -18px 0;
+    }
+}
