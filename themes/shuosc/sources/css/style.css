@@ -74,7 +74,7 @@ a {
 }
 
 body {
-    font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", "Hiragino Sans GB",, Arial, sans-serif;
+    font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", "Hiragino Sans GB", , Arial, sans-serif;
 }
 
 h3 {
@@ -207,7 +207,7 @@ h3 {
     background-size: 50px 50px;
     background-position-y: center;
     margin: 5px 5px;
-    padding-left:20px;
+    padding-left: 20px;
     font-size: 26px;
 }
 
@@ -308,7 +308,7 @@ button.download:hover {
 }
 
 .donation a:hover .popover {
-    display: inline;    
+    display: inline;
 }
 
 .pagewidth {
@@ -345,7 +345,7 @@ button.download:hover {
     padding: 26px 0;
 }
 
-.icon-container.icon-lg > span:first-child {
+.icon-container.icon-lg>span:first-child {
     font-size: 32px;
     margin-top: -3px;
 }
@@ -368,14 +368,18 @@ button.download:hover {
     margin-left: 35px;
 }
 
+
 /* Content*/
+
 .content {
     background: #fff;
     font-size: 12px;
     color: #000;
-    align-content: center;
     line-height: 60px;
+    width: 1080px;
+    margin: 0 auto;
 }
+
 
 /* Footer */
 
@@ -404,17 +408,16 @@ button.download:hover {
     padding-left: 65px;
     height: 100px;
     color: #397C6B;
-    width:250px;
+    width: 250px;
     text-align: center;
 }
 
-
 .footer .wrap .left .title {
-    margin-top: 20px;    
+    margin-top: 20px;
 }
 
 .footer .wrap .left .subtitle {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
 }
 
@@ -428,13 +431,15 @@ button.download:hover {
     color: #397C6B;
     align-content: center;
 }
+
 .footer .wrap .links {
     width: 350px;
     height: 80px;
 }
+
 .footer .wrap .middle div {
     line-height: 26px;
-    min-width:80px;
+    min-width: 80px;
     display: inline-block;
 }
 
@@ -442,8 +447,8 @@ button.download:hover {
     float: right;
 }
 
-.footer .wrap .right .wx{
-    width:100px;
+.footer .wrap .right .wx {
+    width: 100px;
     margin: 10px 30px;
 }
 
@@ -454,6 +459,8 @@ button.download:hover {
 .footer .wrap a:hover {
     color: #7b7b7b;
 }
+
+
 /* 响应式 */
 
 @media all and (max-width: 1080px) {
@@ -517,8 +524,7 @@ button.download:hover {
         display: flex;
         flex-direction: column;
     }
-
-    .footer .wrap .design-by{
+    .footer .wrap .design-by {
         margin: -18px 0;
     }
 }
