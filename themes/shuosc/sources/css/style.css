@@ -65,6 +65,21 @@ figure {
     padding: 0;
 }
 
+.col-4 {
+    width: 33.3333%;
+    float: left;
+}
+
+.col-8 {
+    width: 66.6666%;
+    float: left;
+}
+
+.col-3 {
+    width: 25%;
+    float: left;
+}
+
 li {
     list-style: none;
 }
@@ -74,7 +89,7 @@ a {
 }
 
 body {
-    font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", "Hiragino Sans GB", , Arial, sans-serif;
+    font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
 }
 
 h3 {
@@ -375,9 +390,248 @@ button.download:hover {
     background: #fff;
     font-size: 12px;
     color: #000;
-    line-height: 60px;
-    width: 1080px;
     margin: 0 auto;
+    width: 100%;
+}
+
+.content .activities {
+    background-image: url(/images/mod-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.content .about {
+    background-image: url(/images/cloud.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.content .sections {
+    width: 1080px;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+.content .sections .title {
+    padding: 40px 0 10px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.content .sections .subtitle {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.content .sections .s-content .s-item {
+    background-color: #fff;
+    border: 1px solid #f5f6f5;
+    margin: 40px 16px 40px 0;
+    padding: 30px;
+    text-align: center;
+    width: 287px;
+    float: left;
+}
+
+.content .sections .s-content .s-item:last-child {
+    margin-right: 0;
+}
+
+.content .sections .s-content .s-item:hover {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .1);
+    margin-top: 38px;
+    transition-duration: 200ms;
+}
+
+.content .sections .s-content .s-item h4 {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 28px;
+}
+
+.content .sections .s-content .s-item .s-description {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+.swiper-container {
+    margin: 30px 0 0 0;
+    height: 220px;
+}
+
+.swiper-slide {
+    padding-top: 10px;
+}
+
+.content .teams .swiper-slide .item {
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    height: 160px;
+    padding: 10px;
+    width: 235px;
+    float: left;
+}
+
+.content .teams .swiper-slide .item:not(:last-child) {
+    margin-right: 17px;
+}
+
+.content .teams .swiper-slide .item img {
+    width: 70px;
+}
+
+.content .teams .swiper-slide .item h4 {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+.content .teams .swiper-slide .item p {
+    text-align: left;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 200;
+    margin: 0 10px 0 15px;
+}
+
+.swiper-slide .item:hover {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .1);
+    transition-duration: 200ms;
+    margin-top: -2px;
+}
+
+.swiper-button-prev {
+    left: 0;
+    top: 100px;
+    background-image: url(/images/left.svg);
+}
+
+.swiper-button-next {
+    right: 0;
+    top: 100px;
+    background-image: url(/images/right.svg);
+}
+
+.swiper-pagination {
+    bottom: 0!important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #337C6B;
+}
+
+.content .about .subtitle {
+    width: 600px;
+    line-height: 25px;
+    margin-top: 30px;
+}
+
+.content .about .button {
+    border: 1px solid #fff;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 2px;
+    margin-top: 40px;
+    display: block;
+    max-width: 80px;
+}
+
+.content .about .button:hover {
+    background: #337C6B;
+    border: 1px solid #337C6B;
+}
+
+.content .news {
+    height: 450px;
+}
+
+.content .news .act .content {
+    margin: 20px 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    height: 250px;
+}
+
+.content .news .act .items {
+    width: 350px;
+    height: 30px;
+    margin: 10px 0;
+    display: block;
+    float: left;
+    color: #000;
+}
+
+.content .news .act .items:hover {
+    color: #337C6B;
+}
+
+.content .news .act .items .i-date,
+.i-space,
+.i-title {
+    display: block;
+    float: left;
+}
+
+.content .news .act .items .i-title {
+    width: 250px;
+    margin-right: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content .news .act .more {
+    display: block;
+    float: left;
+    color: #337C6B;
+    font-size: 16px;
+}
+
+.content .news .act .more:hover {
+    text-decoration: underline;
+}
+
+.content .news .pre .content {
+    height: 350px;
+    overflow: auto;
+}
+
+.content .news .pre .items {
+    background: #337C6B;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 15px 0;
+    color: #fff;
+}
+
+.content .news .pre .items:nth-child(even) {
+    background: #30BC9F;
+}
+
+.content .news .pre .items h2,
+h4,
+p {
+    font-weight: 300;
+}
+
+.content .news .pre .items h2 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.content .news .pre .items h4 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.content .news .pre .item p {
+    font-size: 12px;
 }
 
 
@@ -458,6 +712,11 @@ button.download:hover {
 
 .footer .wrap a:hover {
     color: #7b7b7b;
+}
+
+.footer .wrap .links a:hover {
+    padding-left: 8px;
+    transition-duration: 200ms;
 }
 
 
