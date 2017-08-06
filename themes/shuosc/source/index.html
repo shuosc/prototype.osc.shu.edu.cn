@@ -44,6 +44,7 @@
             <p class="intro">上海大学开源社区欢迎你</p>
 
             <div class="donation">
+                <!--
                 <span>捐赠上大开源社区</span>&nbsp;&nbsp;
                 <a href="#">
                     <span class="czs-weixinzhifu icon"></span>
@@ -59,7 +60,7 @@
                     </div>
                     <span class="czs-alipay icon"></span>
                 </a>&nbsp;&nbsp;
-                <span>帮助它成长</span>
+                <span>帮助它成长</span>-->
             </div>
         </div>
     </div>
@@ -158,90 +159,17 @@
                 <div class="col-8 act">
                     <div class="title">热门动态</div>
                     <div class="content">
-                        <a class="items" href="#" alt="一周技术分享：谈谈Java多线程">
-                            <div class="i-date">07.17</div>
-                            <div class="i-space">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                            <div class="i-title">一周技术分享：谈谈Java多线程</div>
-                        </a>
-                        <a class="items" href="#" alt="一周技术分享：关于SHUHelper实现的技术栈">
-                            <div class="i-date">07.14</div>
-                            <div class="i-space">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                            <div class="i-title">一周技术分享：关于SHUHelper实现的技术栈</div>
-                        </a>
-                        <a class="items" href="#">
-                            <div class="i-date">07.17</div>
-                            <div class="i-space">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                            <div class="i-title">一周技术分享：谈谈Java多线程</div>
-                        </a>
-                        <a class="items" href="#">
-                            <div class="i-date">07.14</div>
-                            <div class="i-space">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                            <div class="i-title">一周技术分享：关于SHUHelper实现的技术栈</div>
-                        </a>
-                        <a class="items" href="#">
-                            <div class="i-date">07.17</div>
-                            <div class="i-space">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                            <div class="i-title">一周技术分享：谈谈Java多线程</div>
-                        </a>
-                        <a class="items" href="#">
-                            <div class="i-date">07.14</div>
-                            <div class="i-space">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                            <div class="i-title">一周技术分享：关于SHUHelper实现的技术栈</div>
-                        </a>
-                        <a class="items" href="#">
-                            <div class="i-date">07.17</div>
-                            <div class="i-space">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                            <div class="i-title">一周技术分享：谈谈Java多线程</div>
-                        </a>
-                        <a class="items" href="#">
-                            <div class="i-date">07.14</div>
-                            <div class="i-space">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                            <div class="i-title">一周技术分享：关于SHUHelper实现的技术栈</div>
-                        </a>
-                        <a class="items" href="#">
-                            <div class="i-date">07.17</div>
-                            <div class="i-space">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                            <div class="i-title">一周技术分享：谈谈Java多线程</div>
-                        </a>
-                        <a class="items" href="#">
-                            <div class="i-date">07.14</div>
-                            <div class="i-space">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                            <div class="i-title">一周技术分享：关于SHUHelper实现的技术栈</div>
-                        </a>
                     </div>
-                    <a href="#" class="more">查看更多</a>
+                    <a href="/archives" class="more">查看更多</a>
                 </div>
                 <div class="col-4 pre">
                     <div class="title">活动预告</div>
                     <div class="content">
-                        <div class="items">
-                            <h2>活动主题：谈谈Java多线程</h2>
-                            <h4>主讲人：伊萨</h4>
-                            <p>活动时间：2017-5-7 19:00</p>
-                            <p>活动地点：上海大学东区计算机楼511室</p>
-                        </div>
-                        <div class="items">
-                            <h2>活动主题：关于SHUHelper的分享会</h2>
-                            <h4>主讲人：赵逸群</h4>
-                            <p>活动时间：2017-4-23 19:00</p>
-                            <p>活动地点：上海大学东区计算机楼511室</p>
-                        </div>
-                        <div class="items">
-                            <h2>活动主题：关于SHUHelper的分享会</h2>
-                            <h4>主讲人：赵逸群</h4>
-                            <p>活动时间：2017-4-23 19:00</p>
-                            <p>活动地点：上海大学东区计算机楼511室</p>
-                        </div>
-                        <div class="items">
-                            <h2>活动主题：关于SHUHelper的分享会</h2>
-                            <h4>主讲人：赵逸群</h4>
-                            <p>活动时间：2017-4-23 19:00</p>
-                            <p>活动地点：上海大学东区计算机楼511室</p>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="footer">
         <div class="wrap">
@@ -273,6 +201,80 @@
             </div>
         </div>
     </div>
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var fillContent = new function() {
+            $.get('/index.json', function(data) {
+                var menu = '<a href="/"><li>首页</li></a>';
+                for (var i = 0; i < data['menu'].length; i++) {
+                    menu += '<a href="';
+                    menu += data['menu'][i]['link'];
+                    menu += '" targer="_blank"><li>';
+                    menu += data['menu'][i]['name'];
+                    menu += '</li></a>';
+                }
+                menu += '<a href="https://github.com/shuopensourcecommunity" target="_blank"><li class="github"><span class="czs-github"></span></li></a>';
+                $('.nav').html(menu);
+                var team = '';
+                console.log(data['team'].length);
+                for (var i = 0; i < data['team'].length; i++) {
+                    if (i % 4 == 0) {
+                        team += '<div class="swiper-slide">';
+                    }
+                    team += '<div class="item"><img src="';
+                    team += data['team'][i]['img_url'];
+                    team += '"><h4>';
+                    team += data['team'][i]['name'];
+                    team += '</h4><p>';
+                    team += data['team'][i]['description'];
+                    team += '</p></div>';
+                    if ((i + 1) % 4 == 0 || i == data['team'].length) {
+                        team += '</div>';
+                    }
+                }
+                $('.teams .swiper-wrapper').html(team);
+                var activity = '';
+                for (var i = 0; i < data['activity'].length; i++) {
+                    activity += '<div class="items"><h2>活动主题：';
+                    activity += data['activity'][i]['title'];
+                    activity += '</h2><h4>主讲人：';
+                    activity += data['activity'][i]['reporter'];
+                    activity += '</h4><p>活动时间：';
+                    activity += data['activity'][i]['time'];
+                    activity += '</p><p>活动地点：';
+                    activity += data['activity'][i]['address'];
+                    activity += '</p></div>';
+                }
+                $('.pre .content').html(activity);
+                var links = '';
+                for (var i = 0; i < data['links'].length; i++) {
+                    links += '<div><a href="';
+                    links += data['links'][i]['link'];
+                    links += '" target="_blank">';
+                    links += data['links'][i]['name'];
+                    links += '</a></div>';
+                }
+                $('.links').html(links);
+            });
+            $.get('/recent.json', function(data) {
+                var acticles = '';
+                if (data.length == 0) {
+                    acticles = '暂无动态';
+                } else {
+                    for (var i = 0; i < data.length; i++) {
+                        acticles += '<a class="items" href="/p/';
+                        acticles += data[i]['abbrlink'];
+                        acticles += '.html"><div class="i-date">';
+                        acticles += data[i]['date'].substring(5, 10);
+                        acticles += '</div><div class="i-space">&nbsp;&nbsp;|&nbsp;&nbsp;</div><div class="i-title">';
+                        acticles += data[i]['title'];
+                        acticles += '</div></a>';
+                    }
+                }
+                $('.act .content').html(acticles);
+            });
+        };
+    </script>
     <script src="//cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
     <script>
         var mySwiper = new Swiper('.swiper-container', {

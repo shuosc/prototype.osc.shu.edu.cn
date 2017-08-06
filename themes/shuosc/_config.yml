@@ -1,0 +1,9 @@
+generatorRecent:
+  file: recent.json
+  number: 10
+  sort: -date
+  fields: # set to true for all fields (default)
+    - title
+    - slug
+    - date
+    - tags

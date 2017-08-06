@@ -558,7 +558,7 @@ button.download:hover {
     height: 250px;
 }
 
-.content .news .act .items {
+.content .news .act .content .items {
     width: 350px;
     height: 30px;
     margin: 10px 0;
@@ -567,11 +567,11 @@ button.download:hover {
     color: #000;
 }
 
-.content .news .act .items:hover {
+.content .news .act .content .items:hover {
     color: #337C6B;
 }
 
-.content .news .act .items .i-date,
+.i-date,
 .i-space,
 .i-title {
     display: block;
@@ -579,7 +579,7 @@ button.download:hover {
 }
 
 .content .news .act .items .i-title {
-    width: 250px;
+    width: 245px;
     margin-right: 30px;
     white-space: nowrap;
     overflow: hidden;
@@ -718,6 +718,9 @@ p {
     padding-left: 8px;
     transition-duration: 200ms;
 }
+
+
+/* 文章页 */
 
 
 /* 响应式 */

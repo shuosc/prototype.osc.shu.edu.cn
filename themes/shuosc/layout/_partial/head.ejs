@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <%
+  var title = page.title;
+
+  if (is_archive()){
+    title = __('全部文章');
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+  } else if (is_category()){
+    title = __('category') + ': ' + page.category;
+  } else if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+  }
+  %>
+    <title>
+        <% if (title){ %><%= title %> | <% } %> <%= config.title %>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="上海大学开源社区是由上海大学学生在 2010 年自主发起成立的学生组织，社区旨在借助校园的资源和平台，将学生中的极客、IT企业和其他民间技术社区联系起来，让学生接触最先进的开源软硬件技术，了解计算机软件产业、硬件产业、互联网产业的动态和趋势，并且通过推广开源文化，促进校园计算机学术环境的良性发展。">
+    <meta name="keyworks" content="上海大学，开源社区，镜像站，npm加速，Gitlab服务">
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/images/logo_180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/logo_72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/logo_114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/logo_144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/images/logo_180.png">
+    <link href="/css/style.css" rel="stylesheet">
+    <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+    <% if (theme.rss){ %>
+        <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+    <% } %>
+    <% if (theme.favicon){ %>
+        <link rel="icon" href="<%- theme.favicon %>">
+    <% } %>
+    <% if (config.highlight.enable){ %>
+        <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <% } %>
+    <%- css('css/shuosc') %>
+    <%- partial('google-analytics') %>
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+</head>
