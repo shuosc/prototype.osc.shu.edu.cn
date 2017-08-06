@@ -109,5 +109,5 @@ algolia:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/shuopensourcecommunity/osc.shu.edu.cn.git
+  repo: git@github.com:shuopensourcecommunity/osc.shu.edu.cn.git
   branch: gh-pages
