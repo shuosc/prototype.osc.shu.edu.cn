@@ -22,9 +22,3 @@ algolia:
     - abbrlink
     - content:strip
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@github.com:shuopensourcecommunity/osc.shu.edu.cn.git
-  branch: gh-pages
