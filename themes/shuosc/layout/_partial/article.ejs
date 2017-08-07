@@ -8,8 +8,8 @@
       </header>
     <% } %>
     <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
     <%- partial('post/category') %>
+    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
@@ -24,11 +24,14 @@
       <% } %>
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
-      <% if (post.comments && config.disqus_shortname){ %>
+      <p>转载请注明原文来自<a href="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('上海大学开源社区') %></a></p>
+      <!--<% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
-      <% } %>
-      <%- partial('post/tag') %>
+      <% } %>-->
+      <div class="tags">
+        <span class="czs-tag-l"></span>
+        <%- partial('post/tag') %>
+      </div>
     </footer>
   </div>
   <% if (!index){ %>
@@ -43,3 +46,4 @@
   </div>
 </section>
 <% } %>
+<script src="//cdn.bootcss.com/algoliasearch/3.24.3/algoliasearch.min.js"></script>
