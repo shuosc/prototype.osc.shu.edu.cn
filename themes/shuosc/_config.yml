@@ -1,4 +1,10 @@
-
+#Menu
+menu:
+  Home: /
+  Archives: /archives/
+  Categories: /categories/
+  Tags: /tags/
+  RSS: /atom.xml
 
 # algolia搜索
 algolia_search:

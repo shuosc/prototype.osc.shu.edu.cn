@@ -1,7 +1,8 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
-categories:
+author: shuosc
+tags: {{ tags }}
+categories: {{ categories }}
 toc: true
 ---
