@@ -24,10 +24,12 @@
         <% } %>
         <a id="nav-search-btn" class="nav-icon" title="<%= __('search') %>"></a>
       </nav>
-      <div id="search-form-wrap">
-        <%- search_form({button: '&#xF002;'}) %>
-      </div>
-      
+    </div>
+    <div id="search-form-wrap">
+        <div class="form-group">
+          <input type="text" id="local-search-input" name="q" results="0" placeholder="<%= __('请输入搜索关键词') %>" class="st-search-input st-default-search-input form-control"/>
+        </div>  
+        <div id="local-search-result"></div>
     </div>
   </div>
 </header>

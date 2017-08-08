@@ -45,11 +45,12 @@ highlight:
   auto_detect: true
   tab_replace:
 search:
-  path: search.xml
+  path: search.json
   field: post
+  format: html
+  limit: 10000
 disqus_shortname: shuosc
 comment_provider: disqus
-
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -92,24 +93,13 @@ theme: shuosc
 #RSS订阅
 plugin:
 - hexo-generator-feed
+- hexo-algoliasearch
 #Feed Atom
 feed:
 type: atom
 path: atom.xml
 limit: 20
 
-algolia:
-  appId: '96IFSMJ35R'
-  apiKey: '462a0b0a7cd91c8bbee96636b5ec9539'
-  adminApiKey: 'f123044f0ac007f637320eca01150b5e'
-  indexName: 'post'
-  chunkSize: 5000
-  fileds:
-    - title
-    - date
-    - tags
-    - abbrlink
-    - content:strip
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

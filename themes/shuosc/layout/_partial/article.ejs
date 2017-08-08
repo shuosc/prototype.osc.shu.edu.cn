@@ -24,7 +24,7 @@
       <% } %>
     </div>
     <footer class="article-footer">
-      <p>转载请注明原文来自<a href="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('上海大学开源社区') %></a></p>
+      <p><span class="czs-share"></span>转载请注明原文来自<a href="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('上海大学开源社区') %></a></p>
       <!--<% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
       <% } %>-->
@@ -39,6 +39,13 @@
   <% } %>
 </article>
 
+  <!-- Table of Contents -->
+  <% if (!index && post.toc){ %>
+  <div id="toc" class="toc-article">
+  <p class="toc-title">TOC</p>
+  <%- toc(post.content) %>
+  </div>
+  <% } %>
 <% if (!index && post.comments && config.disqus_shortname){ %>
 <section id="comments">
   <div id="disqus_thread">
@@ -46,4 +53,7 @@
   </div>
 </section>
 <% } %>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
 <script src="//cdn.bootcss.com/algoliasearch/3.24.3/algoliasearch.min.js"></script>
