@@ -4,6 +4,7 @@ deploy:
   stage: deploy
   script:
     - npm install
+    - npm install -g hexo-cli
     - hexo generate
     - cp public/* /var/www/osc.shu.edu.cn -R
 
