@@ -742,6 +742,14 @@ p {
 
 /* 文章页 */
 
+.markdown-body pre code {
+    font-size: 12px!important;
+}
+
+.markdown-body pre code span {
+    font-size: 12px!important;
+}
+
 
 /* 响应式 */
 

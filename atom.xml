@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://osc.shu.edu.cn/"/>
-  <updated>2017-08-15T04:32:05.000Z</updated>
+  <updated>2017-08-15T08:28:57.000Z</updated>
   <id>https://osc.shu.edu.cn/</id>
   
   <author>
@@ -20,16 +20,49 @@
     <link href="https://osc.shu.edu.cn/p/c25dff8d.html"/>
     <id>https://osc.shu.edu.cn/p/c25dff8d.html</id>
     <published>2017-08-08T14:26:59.000Z</published>
-    <updated>2017-08-15T04:32:05.000Z</updated>
+    <updated>2017-08-15T08:28:57.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+</code></pre>
+<pre><code class="javascript">hljs.configure({useBR: true});
+
+$(&#39;div.code&#39;).each(function(i, block) {
+  hljs.highlightBlock(block);
+});
+</code></pre>
+<pre><code class="css">@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  body:first-of-type pre::after {
+    content: &#39;highlight: &#39; attr(class);
+  }
+}
+
+@import url(&#39;print.css&#39;);
+@page:right {
+ margin: 1cm 2cm 1.3cm 4cm;
+}
+
+@font-face {
+  font-family: Chunkfive; src: url(&#39;Chunkfive.otf&#39;);
+}
+
+div.text,
+#content,
+li[lang=ru] {
+  font: Tahoma, Chunkfive, sans-serif;
+  background: url(&#39;hatch.png&#39;) /* wtf? */;  color: #F0F0F0 !important;
+  width: 100%;
+}
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 ]]></content>
     
@@ -42,9 +75,9 @@
       <category term="hexo" scheme="https://osc.shu.edu.cn/categories/hexo/"/>
     
     
-      <category term="语法" scheme="https://osc.shu.edu.cn/tags/%E8%AF%AD%E6%B3%95/"/>
-    
       <category term="基础" scheme="https://osc.shu.edu.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="语法" scheme="https://osc.shu.edu.cn/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
@@ -87,10 +120,15 @@
     <updated>2017-08-15T04:54:56.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6><p>Alternatively, for H1 and H2, an underline-ish style:</p>
-<h1 id="Alt-H1"><a href="#Alt-H1" class="headerlink" title="Alt-H1"></a>Alt-H1</h1><h2 id="Alt-H2"><a href="#Alt-H2" class="headerlink" title="Alt-H2"></a>Alt-H2</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> s = <span class="string">"JavaScript syntax highlighting"</span>;</div><div class="line">alert(s);</div></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">s = <span class="string">"Python syntax highlighting"</span></div><div class="line"><span class="keyword">print</span> s</div></pre></td></tr></table></figure>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">No</span> language indicated, <span class="keyword">so</span> <span class="keyword">no</span> <span class="keyword">syntax</span> highlighting.</div><div class="line">But let's throw <span class="keyword">in</span> a &lt;b&gt;tag&lt;/b&gt;.</div></pre></td></tr></table></figure>
-]]></content>
+<h1 id="Alt-H1"><a href="#Alt-H1" class="headerlink" title="Alt-H1"></a>Alt-H1</h1><h2 id="Alt-H2"><a href="#Alt-H2" class="headerlink" title="Alt-H2"></a>Alt-H2</h2><pre><code class="javascript">var s = &quot;JavaScript syntax highlighting&quot;;
+alert(s);
+</code></pre>
+<pre><code class="python">s = &quot;Python syntax highlighting&quot;
+print s
+</code></pre>
+<pre><code>No language indicated, so no syntax highlighting.
+But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.
+</code></pre>]]></content>
     
     <summary type="html">
     

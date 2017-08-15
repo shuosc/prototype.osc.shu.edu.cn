@@ -18,28 +18,26 @@
     <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/images/logo_180.png">
     <link href="/css/style.css" rel="stylesheet">
     <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="语法,基础">
+<meta name="keywords" content="基础,语法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo语法基础">
 <meta property="og:url" content="https://osc.shu.edu.cn/p/c25dff8d.html">
 <meta property="og:site_name" content="上海大学开源社区">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-08-15T04:32:05.000Z">
+<meta property="og:updated_time" content="2017-08-15T08:28:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo语法基础">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
     
     
     
-        <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-    
     <link rel="stylesheet" href="/css/shuosc.css">
     <link rel="stylesheet" href="/css/caomei.css">
     <link rel="stylesheet" href="/css/markdown.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css">
     
  
-      <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css">
 </head>
 <body>
   <div id="container">
@@ -64,10 +62,6 @@
           <a class="main-nav-link" href="/">Home</a>
         
           <a class="main-nav-link" href="/archives/">Archives</a>
-        
-          <a class="main-nav-link" href="/categories/">Categories</a>
-        
-          <a class="main-nav-link" href="/tags/">Tags</a>
         
           <a class="main-nav-link" href="/atom.xml">RSS</a>
         
@@ -116,19 +110,52 @@
     <div class="article-entry markdown-body" itemprop="articleBody">
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+</code></pre>
+<pre><code class="javascript">hljs.configure({useBR: true});
+
+$(&#39;div.code&#39;).each(function(i, block) {
+  hljs.highlightBlock(block);
+});
+</code></pre>
+<pre><code class="css">@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  body:first-of-type pre::after {
+    content: &#39;highlight: &#39; attr(class);
+  }
+}
+
+@import url(&#39;print.css&#39;);
+@page:right {
+ margin: 1cm 2cm 1.3cm 4cm;
+}
+
+@font-face {
+  font-family: Chunkfive; src: url(&#39;Chunkfive.otf&#39;);
+}
+
+div.text,
+#content,
+li[lang=ru] {
+  font: Tahoma, Chunkfive, sans-serif;
+  background: url(&#39;hatch.png&#39;) /* wtf? */;  color: #F0F0F0 !important;
+  width: 100%;
+}
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <p><span class="czs-share"></span>转载请注明原文来自<a href="https://osc.shu.edu.cn/p/c25dff8d.html" data-id="cj6d2dr9f0006hw3ckba6jevf" class="article-share-link">上海大学开源社区</a></p>
+      <p><span class="czs-share"></span>转载请注明原文来自<a href="https://osc.shu.edu.cn/p/c25dff8d.html" data-id="cj6dcglis00009q3cil815tr1" class="article-share-link">上海大学开源社区</a></p>
       <!--
         <a href="https://osc.shu.edu.cn/p/c25dff8d.html#disqus_thread" class="article-comment-link">comment</a>
       -->
@@ -172,9 +199,6 @@
   </div>
 </section>
 
-<script>
-hljs.initHighlightingOnLoad();
-</script>
 <script src="//cdn.bootcss.com/algoliasearch/3.24.3/algoliasearch.min.js"></script></section>
         
       </div>
@@ -192,10 +216,6 @@ hljs.initHighlightingOnLoad();
     <a href="/" class="mobile-nav-link">Home</a>
   
     <a href="/archives/" class="mobile-nav-link">Archives</a>
-  
-    <a href="/categories/" class="mobile-nav-link">Categories</a>
-  
-    <a href="/tags/" class="mobile-nav-link">Tags</a>
   
     <a href="/atom.xml" class="mobile-nav-link">RSS</a>
   
@@ -222,6 +242,11 @@ hljs.initHighlightingOnLoad();
 
   </div>
   <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+      hljs.initHighlightingOnLoad();
+  </script>
+  
    <script src="/js/app.js"></script>
 </body>
 </html>
