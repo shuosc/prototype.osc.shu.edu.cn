@@ -23,6 +23,7 @@
         <div class="masthead">
             <div class="navbar">
                 <div class="logo">上海大学开源社区</div>
+                <div class="mlogo"></div>
                 <ul class="nav">
                     <a href="/">
                         <li class="home">首页</li>
@@ -94,6 +95,7 @@
                 <div class="subtitle">开源社区的小伙伴们</div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
+                        <!--
                         <div class="swiper-slide">
                             <div class="item">
                                 <img src="https://avatars0.githubusercontent.com/u/2235314?v=4&s=460">
@@ -138,6 +140,7 @@
                                 <p>SHUOSC三代目</p>
                             </div>
                         </div>
+                        -->
                     </div>
 
                     <div class="swiper-pagination"></div>
@@ -182,7 +185,10 @@
                 <div class="qq">QQ群：24061199</div>
                 <div class="design-by">Designed by <a target="_blank" href="https://lisz.io">@zhonger</a> </div>
             </div>
-            <div class="middle links">
+            <div class="middle">
+                <img src="/images/wx.png" class="wx">
+            </div>
+            <div class="right links">
                 <div><a href="https://mirrors.shuosc.org/" target="_blank">镜像站</a></div>
                 <div><a href="https://git.shuosc.org/" target="_blank">代码托管</a></div>
                 <div><a href="https://ppa.luish.cc/" target="_blank">PPA加速</a></div>
@@ -196,12 +202,11 @@
                 <div><a href="https://mirrors.shuosc.org/zabbix/" target="_blank">Zabbix</a></div>
                 <div><a href="https://wiki.shuosc.org" target="_blank">镜像帮助</a></div>
             </div>
-            <div class="right">
-                <img src="/images/wx.png" class="wx">
-            </div>
         </div>
     </div>
     <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/device.js/0.2.7/device.min.js"></script>
+    <script src="//cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
     <script>
         var fillContent = new function() {
             $.get('/index.json', function(data) {
@@ -216,23 +221,49 @@
                 menu += '<a href="https://github.com/shuopensourcecommunity" target="_blank"><li class="github"><span class="czs-github"></span></li></a>';
                 $('.nav').html(menu);
                 var team = '';
-                console.log(data['team'].length);
-                for (var i = 0; i < data['team'].length; i++) {
-                    if (i % 4 == 0) {
+                if (device.mobile()) {
+                    for (var i = 0; i < data['team'].length; i++) {
                         team += '<div class="swiper-slide">';
-                    }
-                    team += '<div class="item"><img src="';
-                    team += data['team'][i]['img_url'];
-                    team += '"><h4>';
-                    team += data['team'][i]['name'];
-                    team += '</h4><p>';
-                    team += data['team'][i]['description'];
-                    team += '</p></div>';
-                    if ((i + 1) % 4 == 0 || i == data['team'].length) {
+                        team += '<div class="item"><img src="';
+                        team += data['team'][i]['img_url'];
+                        team += '"><h4>';
+                        team += data['team'][i]['name'];
+                        team += '</h4><p>';
+                        team += data['team'][i]['description'];
+                        team += '</p></div>';
                         team += '</div>';
                     }
+                    $('.teams .swiper-wrapper').html(team);
+                    var mySwiper = new Swiper('.swiper-container', {
+                        pagination: '.swiper-pagination',
+                        nextButton: '.swiper-button-next',
+                        prevButton: '.swiper-button-prev',
+                        loop: true,
+                    })
+                } else {
+                    for (var i = 0; i < data['team'].length; i++) {
+                        if (i % 4 == 0) {
+                            team += '<div class="swiper-slide">';
+                        }
+                        team += '<div class="item"><img src="';
+                        team += data['team'][i]['img_url'];
+                        team += '"><h4>';
+                        team += data['team'][i]['name'];
+                        team += '</h4><p>';
+                        team += data['team'][i]['description'];
+                        team += '</p></div>';
+                        if ((i + 1) % 4 == 0 || i == data['team'].length) {
+                            team += '</div>';
+                        }
+                    }
+                    $('.teams .swiper-wrapper').html(team);
+                    var mySwiper = new Swiper('.swiper-container', {
+                        pagination: '.swiper-pagination',
+                        nextButton: '.swiper-button-next',
+                        prevButton: '.swiper-button-prev',
+                        mousewheelControl: false,
+                    })
                 }
-                $('.teams .swiper-wrapper').html(team);
                 var activity = '';
                 for (var i = 0; i < data['activity'].length; i++) {
                     activity += '<div class="items"><h2>活动主题：';
@@ -274,15 +305,6 @@
                 $('.act .content').html(acticles);
             });
         };
-    </script>
-    <script src="//cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            mousewheelControl: false,
-        })
     </script>
 </body>
 
