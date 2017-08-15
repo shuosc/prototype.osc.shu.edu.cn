@@ -226,6 +226,19 @@ h3 {
     font-size: 26px;
 }
 
+.navbar .mlogo {
+    float: left;
+    background-image: url(/images/logo_180.png);
+    width: 20px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position-y: center;
+    margin: 5px 15px;
+    padding-left: 20px;
+    display: none;
+}
+
 .navbar .nav {
     float: right;
     color: #fff;
@@ -678,32 +691,39 @@ p {
 .footer .wrap .middle {
     float: left;
     display: block;
-    font-size: 14px;
-    margin: 20px auto;
+    font-size: 13px;
     margin-left: 40px;
-    width: 150px;
     color: #397C6B;
-    align-content: center;
-}
-
-.footer .wrap .links {
-    width: 350px;
-    height: 80px;
+    margin: 10px 30px;
+    height: 100px;
 }
 
 .footer .wrap .middle div {
     line-height: 26px;
-    min-width: 80px;
-    display: inline-block;
+}
+
+.footer .wrap .copyright,
+.footer .wrap .qq,
+.footer .wrap .design-by {
+    margin: 5px 0;
 }
 
 .footer .wrap .right {
-    float: right;
+    display: block;
+    float: left;
+    width: 350px;
+    height: 80px;
+    margin: 20px auto;
 }
 
-.footer .wrap .right .wx {
+.footer .wrap .links div {
+    line-height: 26px;
+    width: 80px;
+    display: inline-block;
+}
+
+.footer .wrap .middle .wx {
     width: 100px;
-    margin: 10px 30px;
 }
 
 .footer .wrap a {
@@ -725,68 +745,104 @@ p {
 
 /* 响应式 */
 
-@media all and (max-width: 1080px) {
-    .header .masthead {
-        width: calc(100% - 60px);
-        padding: 0 30px;
-    }
-    .footer .wrap {
-        width: calc(100% - 60px);
-        padding: 0 30px;
-    }
-    .pagewidth {
-        padding: 0 30px;
-    }
-}
-
 @media all and (max-width: 480px) {
-    .header .masthead {
+    .col-4,
+    .col-8 {
         width: 100%;
-        padding: 0;
     }
-    .navbar {
-        background-color: #171717;
-        height: 60px;
-        border-bottom: 1px solid #1f1f1f;
-    }
-    .navbar .nav {
-        display: none;
+    .masthead {
+        width: 100%;
     }
     .navbar .logo {
-        background-image: url(../img/logo_mobile.svg);
-        width: 40px;
-        height: 60px;
-        background-repeat: no-repeat;
-        background-size: 40px 60px;
-        float: none;
-        margin: 0 auto;
-    }
-    .intro {
-        margin: 28px 16px 40px 16px;
-    }
-    .donation {
         display: none;
     }
-    button.download {
-        margin-bottom: 40px;
+    .navbar .mlogo {
+        display: block;
     }
-    .footer {
-        line-height: 40px;
+    .nav {
+        margin-left: 10px;
+        margin-right: 20px;
     }
-    .footer .wrap {
-        height: 88px;
-        padding: 4px 0;
-        text-align: center;
+    .navbar .nav li {
+        font-size: 14px;
+        padding: 0 8px;
     }
-    .footer .wrap .left,
-    .footer .wrap .right {
+    .intro {
+        font-size: 22px;
+    }
+    .content .sections {
+        padding: 15px;
+        width: 90%;
+    }
+    .content .sections .title {
+        font-size: 24px;
+        width: 100%;
+    }
+    .content .activities {
+        height: 800px;
+    }
+    .content .activities .s-content {
+        margin: 20px auto;
+    }
+    .content .activities .s-content .s-item {
+        margin: 5px;
+        width: 85%;
+        padding: 22px;
+    }
+    .content .sections .subtitle {
+        width: 100%;
+    }
+    .content .teams .swiper-slide .item {
+        padding: 15px 0;
+        width: 99%;
+    }
+    .content .news .act .content {
+        height: auto;
+    }
+    .content .news .act .content .items {
+        width: 280px;
+        margin: 5px;
         float: none;
     }
-    .footer .wrap .left {
-        display: flex;
-        flex-direction: column;
+    .content .news .act .content .items .i-title {
+        width: 200px;
+        margin-right: 0;
     }
-    .footer .wrap .design-by {
-        margin: -18px 0;
+    .content .news {
+        min-height: 700px;
+        max-height: 850px;
+    }
+    .content .news .pre .content {
+        width: 100%;
+        margin: 0 0;
+        height: 335px;
+    }
+    .content .news .pre .items h2 {
+        font-size: 18px;
+    }
+    .footer {
+        min-height: 360px;
+    }
+    .footer .wrap {
+        width: 100%;
+    }
+    .footer .wrap .left {
+        width: 70%;
+        margin-left: 30px;
+    }
+    .footer .wrap .left .title {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    .footer .wrap .right {
+        width: 90%;
+        margin-left: 40px;
+    }
+    .footer .wrap .links a:hover {
+        padding-left: 0px;
+        transition-duration: 0ms;
+    }
+    .footer .wrap a:hover {
+        color: #397C6B;
     }
 }

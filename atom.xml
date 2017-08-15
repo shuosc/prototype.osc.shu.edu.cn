@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>上海大学开源社区</title>
+  <subtitle>SHUOSC</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://osc.shu.edu.cn/"/>
+  <updated>2017-08-15T04:32:05.000Z</updated>
+  <id>https://osc.shu.edu.cn/</id>
+  
+  <author>
+    <name>上海大学开源社区</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo语法基础</title>
+    <link href="https://osc.shu.edu.cn/p/c25dff8d.html"/>
+    <id>https://osc.shu.edu.cn/p/c25dff8d.html</id>
+    <published>2017-08-08T14:26:59.000Z</published>
+    <updated>2017-08-15T04:32:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://osc.shu.edu.cn/categories/hexo/"/>
+    
+    
+      <category term="语法" scheme="https://osc.shu.edu.cn/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+      <category term="基础" scheme="https://osc.shu.edu.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>印度边防部队在中印边界锡金段越界进入中国领土的事实和中国的立场</title>
+    <link href="https://osc.shu.edu.cn/p/5b54ae37.html"/>
+    <id>https://osc.shu.edu.cn/p/5b54ae37.html</id>
+    <published>2017-07-08T14:25:35.000Z</published>
+    <updated>2017-08-15T04:54:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="十问十答"><a href="#十问十答" class="headerlink" title="十问十答"></a>十问十答</h1><ul>
+<li>问：中方昨天发布了《印度边防部队在中印边界锡金段越界进入中国领土的事实和中国的立场》文件，文件提到6月16日，中方在洞朗地区进行道路施工，此前也向印方作了通报，请问施工的目的是什么？通报的具体情况是怎样？印方作何反馈？</li>
+<li>答：6月16日，中方在中印边界锡金段中方一侧的洞朗地区进行道路施工，目的是为了改善当地的交通，便利当地牧民放牧和边防部队巡逻。这是中方在自己领土上的正常活动，完全正当合法。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;十问十答&quot;&gt;&lt;a href=&quot;#十问十答&quot; class=&quot;headerlink&quot; title=&quot;十问十答&quot;&gt;&lt;/a&gt;十问十答&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;问：中方昨天发布了《印度边防部队在中印边界锡金段越界进入中国领土的事实和中国的立场》文件，文件提到6月16日，中
+    
+    </summary>
+    
+      <category term="时事新闻" scheme="https://osc.shu.edu.cn/categories/%E6%97%B6%E4%BA%8B%E6%96%B0%E9%97%BB/"/>
+    
+      <category term="测试" scheme="https://osc.shu.edu.cn/categories/%E6%97%B6%E4%BA%8B%E6%96%B0%E9%97%BB/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="外交" scheme="https://osc.shu.edu.cn/tags/%E5%A4%96%E4%BA%A4/"/>
+    
+      <category term="军事" scheme="https://osc.shu.edu.cn/tags/%E5%86%9B%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试语法内容</title>
+    <link href="https://osc.shu.edu.cn/p/b55acf1b.html"/>
+    <id>https://osc.shu.edu.cn/p/b55acf1b.html</id>
+    <published>2016-05-04T14:27:01.000Z</published>
+    <updated>2017-08-15T04:54:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6><p>Alternatively, for H1 and H2, an underline-ish style:</p>
+<h1 id="Alt-H1"><a href="#Alt-H1" class="headerlink" title="Alt-H1"></a>Alt-H1</h1><h2 id="Alt-H2"><a href="#Alt-H2" class="headerlink" title="Alt-H2"></a>Alt-H2</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> s = <span class="string">"JavaScript syntax highlighting"</span>;</div><div class="line">alert(s);</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">s = <span class="string">"Python syntax highlighting"</span></div><div class="line"><span class="keyword">print</span> s</div></pre></td></tr></table></figure>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">No</span> language indicated, <span class="keyword">so</span> <span class="keyword">no</span> <span class="keyword">syntax</span> highlighting.</div><div class="line">But let's throw <span class="keyword">in</span> a &lt;b&gt;tag&lt;/b&gt;.</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;H1&quot;&gt;&lt;a href=&quot;#H1&quot; class=&quot;headerlink&quot; title=&quot;H1&quot;&gt;&lt;/a&gt;H1&lt;/h1&gt;&lt;h2 id=&quot;H2&quot;&gt;&lt;a href=&quot;#H2&quot; class=&quot;headerlink&quot; title=&quot;H2&quot;&gt;&lt;/a&gt;H2&lt;/h2&gt;&lt;h3 id
+    
+    </summary>
+    
+      <category term="测试" scheme="https://osc.shu.edu.cn/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="语法" scheme="https://osc.shu.edu.cn/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+</feed>
