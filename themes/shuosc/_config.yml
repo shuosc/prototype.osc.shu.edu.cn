@@ -2,29 +2,6 @@
 menu:
   Home: /
   Archives: /archives/
-  Categories: /categories/
-  Tags: /tags/
   RSS: /atom.xml
 
-# algolia搜索
-algolia_search:
-  enable: true
-  hits:
-    per_page: 10
-  labels:
-    input_placeholder: 请输入关键词
-    hits_empty: "没有找到与【${query}】相关的内容"
-    hits_stats: "${hits}条相关记录，共耗时${time} ms"
-algolia:
-  appId: '96IFSMJ35R'
-  apiKey: '462a0b0a7cd91c8bbee96636b5ec9539'
-  adminApiKey: 'f123044f0ac007f637320eca01150b5e'
-  indexName: 'post'
-  chunkSize: 5000
-  fileds:
-    - title
-    - date
-    - tags
-    - abbrlink
-    - content:strip
-
+highlight_theme: tomorrow
