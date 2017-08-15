@@ -3,6 +3,7 @@ stages:
 deploy:
   stage: deploy
   script:
+    - echo $(whoami)
     - npm install
     - npm install -g hexo-cli
     - hexo generate
