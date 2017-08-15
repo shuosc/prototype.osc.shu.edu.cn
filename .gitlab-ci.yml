@@ -1,0 +1,15 @@
+stages:
+- deploy
+deploy:
+  stage: deploy
+  script:
+    - cd /tmp && git clone ssh://git@git.shuosc.org:8000/shuosc/osc.shu.edu.cn.git
+    - cd osc.shu.edu.cn && npm install
+    - hexo generate
+    - cp public/* /var/www/osc.shu.edu.cn
+    - cd ~ && rm -rf /tmp/osc.shu.edu.cn
+
+  only:
+    - master
+  tags:
+    - shell
