@@ -340,7 +340,9 @@ span{
 #article-nav a:hover{
     text-decoration: underline;
 }
-
+#comments{
+    width: 80%;
+}
 
 /* 底部版权 */
 #footer {
@@ -367,3 +369,19 @@ span{
     padding: 10px 0;
 }
 
+@media screen and (max-width: 900px) {
+    #container{
+        width: 100%;
+    }
+    #main{
+        width: 100%;
+    }
+    #toc{
+        display: none;
+    }
+
+    #footer .outer{
+        width: 100%;
+    }
+
+}

@@ -1,5 +1,4 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-  
   <div class="article-inner">
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
@@ -40,13 +39,13 @@
   <% } %>
 </article>
 
-  <!-- Table of Contents -->
-  <% if (!index && post.toc){ %>
+<!-- Table of Contents -->
+<% if (!index && post.toc){ %>
   <div id="toc" class="toc-article">
   <p class="toc-title">TOC</p>
   <%- toc(post.content) %>
   </div>
-  <% } %>
+<% } %>
 <% if (!index && post.comments && config.disqus_shortname){ %>
 <section id="comments">
   <div id="disqus_thread">
