@@ -3,7 +3,7 @@ stages:
 deploy:
   stage: deploy
   script:
-    - cd osc.shu.edu.cn && hexo clean
+    - cd /tmp/osc.shu.edu.cn && hexo clean
     - git pull
     - npm install
     - hexo generate
