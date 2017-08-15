@@ -3,7 +3,7 @@ stages:
 deploy:
   stage: deploy
   script:
-    - echo $(whoami)
+    - export PATH=$PATH:/opt/node-v6.11.2-linux-x64/bin
     - npm install
     - hexo generate
     - cp public/* /var/www/osc.shu.edu.cn -R
