@@ -6,6 +6,7 @@ deploy:
     - export PATH=$PATH:/opt/node-v6.11.2-linux-x64/bin
     - npm install
     - hexo generate
+    - rm -rf /var/www/osc.shu.edu.cn/*
     - cp public/* /var/www/osc.shu.edu.cn -R
 
   only:
