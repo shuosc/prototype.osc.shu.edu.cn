@@ -19,17 +19,19 @@
 
 ### 配置说明
 主页具有以下配置属性：
-大类名 | 项属性 | 含义
+
+大类名 | 项属性 | 含义
  :--: | :--: | :--:
- `menu` | `name`、`link` | 顶部菜单
- `team` | `img_url`、`name`、`description` | 团队成员
- `activity` | `title`、`reporter` 、`time`、`address`| 活动预告
- `links` | `name`、`link` | 底部快速链接
+`menu` | `name`、`link` | 顶部菜单
+`team` | `img_url`、`name`、`description` | 团队成员
+`activity` | `title`、`reporter` 、`time`、`address`| 活动预告
+`links` | `name`、`link` | 底部快速链接
 
 文章默认具有以下配置属性：
+
 属性名 | 含义 | 默认
  :--: | :--: | :---:
-title | 文章标题 | `与源文件名一致`
+title | 文章标题 | `与源文件名一致`
 author | 作者| `shuosc`
 toc | 是否开启目录 | `true`
 tags | 文章标签 | `空`
@@ -38,20 +40,20 @@ abbrlink | 文章唯一链接 | `自动生成`
 date | 文章生成时间 | `自动生成`
 
 ### 使用说明
-编辑内容的主机要求具有`Nodejs`环境，如无可参照[附录A](#附录A)中说明安装
+编辑内容的主机要求具有`Nodejs`环境，如无可参照[附录A](#附录A)中说明安装
 
 ```shell
 git clone ssh://git@git.shuosc.org:8000/shuosc/osc.shu.edu.cn
 npm install && npm install -g hexo-cli
 hexo new t1  //生成新文章t1
 编辑`/source/_posts/t1.md`  //支持常用Markdown语法
-hexo server --debug  //调试状态，边编辑边查看
+hexo server --debug  //调试状态，边编辑边查看
 git status && git add -A
 git commit -m 'update content'
 git push origin master
 ```
 
-如果需要同时同步`gitlab`和`github`，请在克隆之后立刻执行以下命令
+如果需要同时同步`gitlab`和`github`，请在克隆之后立刻执行以下命令
 
 ```shell
 git remote add github git@github.com:shuopensourcecommunity/osc.shu.edu.cn.git
